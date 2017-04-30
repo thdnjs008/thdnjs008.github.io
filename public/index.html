@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="stylesheet.css">
+        <meta http-equiv='Content-Type' content='text/html; charset=utf-8'>
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+        <script type="text/javascript">
+             $('document').ready(function(){
+                $('#menu').click(function(){
+                      $('html, body').animate({scrollTop:$("#myDiv").offset().top
+                            },1000);
+                      });
+                $('#contact').click(function(){
+                  $('html, body').animate({scrollTop:$("#phone").offset().top
+                        },1000);
+                  });
+              $(".limouse").mouseover(function() {
+                 $(this).css("background-color","gray");
+              });
+              
+              $(".limouse").mouseleave(function() {
+                 $(this).css("background-color","black") 
+              });
+             });
+              
+        </script>
+        <title>LikeLion_SoWonChoi</title>
+    </head>
+    <body>
+        <div class="upper">
+            <header class="header">
+                <h1 class="logo">SoWon</h1>
+                <nav class="nav">
+                    <ul class="list">
+                        <a href='#'class="limouse na">home</a>
+                        <a href='#' id="menu" class="limouse na">menu</a>
+                        <a href='#' class="limouse na">Q&A</a>
+                        <a href='#' id="contact" class="limouse na">contact</a>
+                    </ul>
+                </nav>
+            </header>
+        </div>
+        
+        <section class="landing">
+            <div class="main">
+                <h2 class="name">SoWon Choi</h2>
+                <p class="para">Welcome to SoWon's page!</p>
+            </div>
+        </section>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/O136JYv3weQ" frameborder="0" allowfullscreen></iframe>
+       <div class="con" id="myDiv">
+           <content class="content1">
+               <img src="http://post.phinf.naver.net/20160825_95/14720994612829Fzow_JPEG/12.jpg?type=w1200"/>
+               <p>information</p>
+               <ul>
+                   <li>name : Choi SoWon</li>
+                   <li>major: MNE</li>
+                   <li>birth: 1996년 2월 28일</li>
+               </ul>
+           </content>
+           <content class="content2">
+               <img src="http://post.phinf.naver.net/20160825_95/14720994612829Fzow_JPEG/12.jpg?type=w1200"/>
+                <p>schedule</p>
+           </content>
+           <content class="content3">
+             <img src="http://post.phinf.naver.net/20160825_95/14720994612829Fzow_JPEG/12.jpg?type=w1200"/>
+              <a href="https://www.facebook.com/profile.php?id=100005049942835&ref=bookmarks">photo</a>
+              <a>click!</a>
+           </content>
+       </div>
+        <footer class="tel">
+            <h2 class="text" id="phone">Tel: 010-5775-2685</h2>
+        </footer>
+        
+        
+        
+    </body>
+</html>
